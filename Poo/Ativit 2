@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+
+public class ativit2 {
+ public static void main(String[] args) {
+ 
+        int idade;
+        int cont = 0;
+ 
+        for (int i = 1; i <= 10) {
+ 
+            idade = Integer.parseInt(JOptionPane.showInputDialog("Informe a idade da pessoa"));
+ 
+            if (idade >= 18) {
+                cont = cont + 1;
+            }
+        }
+ 
+        System.out.println("A quantidade de pessoas com idade maior ou igual a 18 anos é de " + cont);
+    }
+ 
+}
